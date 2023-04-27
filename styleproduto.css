@@ -1,0 +1,93 @@
+body{
+  background: #795B82;
+}
+
+nav{
+  display: flex;
+}
+
+ul { /*BORDA */
+  	list-style-type: none;
+	background-color: #333;
+	padding: auto;
+  	margin-top: 1000px;
+  	border-radius: 100px;
+  	width: 650px;
+  	height: 40px;
+  	text-align: center;
+    margin: 66px auto 0px 300px;
+  	margin-top: -40px;
+}
+
+li { /*deixa na lateral as letras*/ 
+  display: inline-block;
+  margin: 0px;
+  height: 5px;
+}
+ul li a {
+  display: block;
+  padding: 0px 25px;
+  font-size: 20px;
+  line-height: 40px;
+  text-decoration: none ;
+  position: relative;
+  color: #6800FE;
+  left: 0px;
+}
+
+.feliz{
+	margin-top: 122px;
+}
+
+
+/*
+	Informações a respeitos dos membros da página
+*/
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.member {
+	width: 300px;
+	height: 400px;
+	margin-bottom: 30px;
+	background-color: #f1f1f1;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.member img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+.member h3 {
+	margin-top: 0;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.member p {
+	margin-bottom: 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+footer{
+  background: #333;
+  margin-right: -8px;
+  margin-top: 33px;
+  margin-bottom: -17px;
+  margin-left: -8px;
+  box-sizing: border-box;
+}

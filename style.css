@@ -1,0 +1,185 @@
+
+/*
+	Informações a respeitos dos membros da página
+*/
+/*inicio codigo menu */
+
+body{
+  background: #795B82;
+}
+
+nav{
+  display: flex;
+  margin-left: 50px;
+}
+
+/*inicio codigo menu linha */
+
+ul { /*BORDA*/
+  list-style-type: none;
+	background-color: #333;
+  padding: auto;
+  margin-top: 1000px;
+  border-radius: 100px;
+  width: 650px;
+  height: 60px;
+  text-align: center;
+  margin: 20px auto 20px auto ;
+  margin-top: -100px;
+}
+
+li { /*deixa na lateral as letras */
+  display: inline-block;
+  margin: 0px;
+  height: 10px;
+}
+
+/*imagens teste tela inicial imagem com texto*/
+.pw{
+  display: flex;
+  flex-direction: column;
+
+}
+div p{
+  padding: 0;
+  margin: 3px;
+
+}
+
+.ra{
+  display: flex;
+  margin: 0px;
+}
+.ra img{
+  margin-top: 100px;
+}
+.ra p{
+  margin-top: 100px;
+  text-align: left;
+  width: 300px;
+}
+.ree{
+  display: flex;
+  margin: 0 auto;
+}
+.ree img{
+  margin-top: 200px;
+/*  width: 300px;  
+*/}
+
+.ree p{
+  margin-top: 200px;
+  text-align: right;
+  width: 300px;
+}
+
+
+ul li a {
+  display: block;
+  padding: 0px 25px;
+  font-size: 20px;
+  line-height: 50px;
+  text-decoration: none ;
+  position: relative;
+  color: #6800FE;
+  left: 0px;
+}
+header{ /*coloca no meio o h2 (blink) */
+  padding: 0px 500px;
+  height: 50px;
+  margin-top: 100px
+
+}
+/*.BemVindo{
+  padding: px; 
+  margin: 500px;
+
+}
+*/
+ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 2px;
+  left: 0;
+  background-color: aqua;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 1.0ss ease-in-out 0s;
+  transition: all 1.0s ease-in-out 0s;
+}
+
+ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  background: #C900FF/*rosa*/
+
+}
+
+/*Fim codigo menu*/
+
+.blink { /* fazer piscar */
+  margin: 50px;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  100% {
+    opacity: 0;
+}}
+  /*fim do fazer piscar*/
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.member {
+  width: 190px;
+  height: 300px;
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.member img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.member h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.member p {
+  margin-bottom: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/*ultima parte da pagina  */
+
+footer{
+  background: #333;
+  margin-right: -8px;
+  margin-top: 33px;
+  margin-bottom: -17px;
+  margin-left: -8px;
+  box-sizing: border-box;
+}
